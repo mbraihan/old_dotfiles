@@ -1,0 +1,20 @@
+- clean: ['~']
+
+- link:
+    ~/.zprofile:
+        path: zprofile
+        create: false
+        relink: false
+        force: false
+    ~/.zshrc:
+        path: zshrc
+        create: false
+        relink: false
+        force: false
+    ~/.p10k.zsh:
+        path: p10k.zsh
+        create: false
+        relink: false
+        force: false
+
+
