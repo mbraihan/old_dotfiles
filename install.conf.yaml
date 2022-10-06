@@ -41,25 +41,20 @@
         create: true
         relink: false
         force: false
-    ~/.vimrc:
-        path: vimrc
-        create: false
-        relink: false
-        force: false
 
 - shell:
   - [git submodule update --init --recursive, Installing submodules]
 - clean: ['~']
 
 - link:
-    ~/.gitconfig:
-        path: gitconfig
-        create: false
+    ~/.gnupg:
+        path: gnupg/
+        create: true
         relink: false
         force: false
-    ~/.gitignore_global:
-        path: gitignore_global
-        create: false
+    ~/.ipython:
+        path: ipython/
+        create: true
         relink: false
         force: false
 
