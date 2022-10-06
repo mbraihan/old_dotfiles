@@ -33,11 +33,16 @@
         force: false
     ~/.gnupg:
         path: gnupg
-        create: false
+        create: true
         relink: false
         force: false
     ~/.ipython:
         path: ipython
+        create: true
+        relink: false
+        force: false
+    ~/.z :
+        path: z
         create: true
         relink: false
         force: false
@@ -47,14 +52,9 @@
 - clean: ['~']
 
 - link:
-    ~/.gnupg:
-        path: gnupg/
-        create: true
-        relink: false
-        force: false
-    ~/.ipython:
-        path: ipython/
-        create: true
+    ~/.z:
+        path: z
+        create: false
         relink: false
         force: false
 
